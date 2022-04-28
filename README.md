@@ -42,7 +42,10 @@ decisões!
 Nesta edição do Stone Data Challenge, queremos dividir com você um dos problemas
 reais que nosso negócio enfrentou:
 
-### Qual é a curva ideal de vezes que acionamos um cliente?
+### Pergunta a ser respondida!
+
+“Qual é a curva ideal de vezes que devemos acionar um
+cliente?”
 
 Quando um cliente começa a apresentar dificuldade na liquidação de seus contratos, ele
 passa a ser elegível para ser acionado por nossa régua de comunicação com intuito de
