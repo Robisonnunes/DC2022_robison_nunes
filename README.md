@@ -1,5 +1,11 @@
-# DC2022_robison_nunes
-Repositório Stone Data Challenge - 2022
+
+Atenção! Aviso legal e conformidade com a LGPD!!
+
+Todos os fluxos, processos, dados utilizados e disponibilizados neste desafio
+foram gerados de forma aleatória e exclusivamente para este hackathon e não
+representam dados de nossos clientes ou processos da StoneCo.
+
+# Repositório Stone Data Challenge - 2022
 
 Descrição do case
 A Stone tem como objetivo ajudar o empreendedor brasileiro a vender, gerir e crescer
@@ -26,7 +32,7 @@ seja, com problemas no pagamento de seus contratos e, consequentemente, sentimos
 necessidade de evoluir nossas ações de comunicação e acionamento para recuperação
 dos saldos devedores que alguns clientes passaram a deixar em aberto.
 
-Problema de Negócio 
+## Problema de Negócio 
 
 Dentro desta evolução, uma das ações tomadas internamente foi refinar nossas
 estratégias de comunicação com os clientes, visando recuperar clientes que apresentavam
@@ -36,7 +42,7 @@ decisões!
 Nesta edição do Stone Data Challenge, queremos dividir com você um dos problemas
 reais que nosso negócio enfrentou:
 
-Qual é a curva ideal de vezes que acionamos um cliente?
+### Qual é a curva ideal de vezes que acionamos um cliente?
 
 Quando um cliente começa a apresentar dificuldade na liquidação de seus contratos, ele
 passa a ser elegível para ser acionado por nossa régua de comunicação com intuito de
