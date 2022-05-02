@@ -1,0 +1,41 @@
+1 -  BUSINESS UNDERSTANDING 
+Nesa primeira etapa o objetivo e entender o contexto dos dados e entender também qual pergunta de negócio tenha que responder com análise de dados
+
+2 -  DATA UNDERSTANDING
+Processo de entendimento dos arquivos de dados de forma separada e através do diagrama MER entender o relacionamento entre as tabelas
+
+	2.1 -  LOAD DATASETS
+	Carregamento e visualização dos dados de cada base 
+
+	2.2 -  EXPLORATORY DATA ANALYSIS
+	Nesta etapa fiz um overview das metricas básicas sobre os datasets, Ex: shape, missing, duplicated 
+	
+3 - ETL
+Etapa fundamental aqui fiz todos os arranjos e transformações em cada dataset com o objetivo de criar uma base única, com todas as dimensões do problema a ser resolvido.
+
+Ex: criação de chaves únicas, agrupamentos, label encoding, remoção de linhas duplicadas, exportação de outputs de cada dataset
+
+	3.1 -  PORTIFÓLIO COMUNICADOS
+	Apos a analise do dataset comunicados, decidi agrupar todas as informacoes de ação e status em uma linha só, antes cada tipo de acao
+	ocupava uma linha e o contrato_id nao era um indexador único, criei entao uma PK com a uniao do contrato_id + dt_ref_portfolio, 
+	criando uma chave para o 	merge com portifolio geral.
+
+	3.2 -  PORTIFÓLIO TPV			
+	Apos a analise do dataset, corrigi o formato da data e criei uma PK com a uniao do 'nr_documento' + 'dt_transacao', 
+	criando uma chave para o merge com portifolio geral.
+	
+	3.3 -  PORTIFÓLIO CLIENTES
+	Apos a analise do dataset, removi as linhas duplicadas
+	
+	3.4 -  CRIACAO DA BASE ÚNICA
+	Foi feito o carregamentos dos resultados dos etls das bases de comunicados/tpv/clientes para fazer o join com portifolio geral
+	gerando assim a base única, foram feito os seguintes passsos:
+	
+	- Criação de chaves estrageiras das tabelas dimensão no portofolio geral 
+	- foi feitos os joins separadamente
+	- rename das colunas e drop das colunas desnecessárias 
+	- exportação do output do etl geral para proxima parte de análise
+	
+4 - DATA ANALYSIS
+
+	
