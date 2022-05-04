@@ -1,3 +1,15 @@
+DATASETS
+Dados originais estão na pasta Dados_etc/, todos os outros estão na raiz
+
+portfolio_full = p_geral + p_comunicados + p_cliente + p_ptv + indices_por_uf_ibge
+
+caminho df = portfolio_full > df > df_efetividade > df_clusterizada - df0
+                                                                    - df1
+                                                                    - df2 
+Transformações no df = filro sazonalidade 
+                  df = df1 só linhas com acoes
+
+--------------------------------------------------------------------------------------------------------------------------------------------
 1 -  BUSINESS UNDERSTANDING 
 Nesa primeira etapa o objetivo e entender o contexto dos dados e entender também qual pergunta de negócio tenha que responder com análise de dados
 
