@@ -79,4 +79,64 @@ portfolio_full = p_geral + p_comunicados + p_cliente + p_ptv + indices_por_uf_ib
         4.1.5 - rankinq geral de dsp/dspp por segmento/tipo de empresa
         - Esse gráfico mostra o ranking 
         
+	4.1.6 - Criação da janelas de efetividade das ações
+	- Nessa eu fiz dois grandes loops com o ojetivo de criar duas colunas importantes para minha análise a efetividade e acao2
+	- efetividade - irá informar se houve pagamento apos um acao ter sido lida e estiver na sua janela de tempo ex: acao
+	 observacao tem uma janela de 5 dias
+	- acao 2 - irá indeficar quais acoes com base no dsp e dspp
+	
+	4.1.7 - gráfico de efetividade de pagamento
+	- Sao dois grádicos que serao a base line para análise futura da base em clusters 
+	- Curva de efetividade por acionamentos x efetividade da acao
+	- Curva de efetividade por acao
+
+   4.2 -  CLUSTERIZAÇÃO DA BASE
+   O objetivo aqui foi encontrar insights para diferentes tipos de clientes por meio de um algoritmo de machine learning de clusterizaçao
+   O Kmeans. doi selecionado as variaveis relevantes para essa acao.
+   
+       4.2.1 - Gráfico de Elbon - Kmeans
+       - Grádico de Elbom ele mostra o nº de cluster ideal (hiperparemetro do modelo)
+       - Através do gráfico foi definido que 3 clusters seria o ideal para a nossa análise
+       
+       4.2.2 - Construindo e Treinando o Modelo - Kmeans
+       - Aplicando os hiperametros necessários e cronstruindo o modelo
+       - Foi feito o treinamento do modelo
+       - Após o treinamento fois extraídos e atribuido a um objeto as labels dos rótulos
+       - Foi feito o objeto cluster (dim da base clusterizada) e foi feito um join com as labels) (contrao_id (PK) e labels)
+       
+       4.2.2 - Construindo base cluserizada - Kmeans
+       - foi feito o join da base df + cluster para atribuir um tag de cluster em toda a base
+       - Após isso a base foi dividida em 3 clusters
+       
+       4.2.3 - Cluser 0 - Kmeans
+       - foram criadas todas as bases para gerar dois gráficos que analisa dois aspectos
+       - - Curva de efetividade por acionamentos x efetividade da acao
+	- Curva de efetividade por acao
+       
+       4.2.4 - Cluser 1 - Kmeans
+       - foram criadas todas as bases para gerar dois gráficos que analisa dois aspectos
+       - - Curva de efetividade por acionamentos x efetividade da acao
+	- Curva de efetividade por acao
+       
+       4.2.5 - Cluser 2 - Kmeans
+       - foram criadas todas as bases para gerar dois gráficos que analisa dois aspectos
+       - - Curva de efetividade por acionamentos x efetividade da acao
+	- Curva de efetividade por acao
+       
+5 -  INSIGHTS
+Nessa secao apresento todo resultado de análise exploratório de dados com também a recomendacao de análise para a melhor curva
+de efetividade da acao.
+       
+       Conte pra nós, qual é a curva ideal de vezes que devemos acionar um cliente?
+
+A estratégia usada foi principalmente feita em python e uma análise complementar visual em Power Bi, importante ressaltar que as duas análises se complementar nao dizem a mesma coisa , obejtivo foi clusterizar a base e responder a pergunta de negócio.
+
+Iniciei fazendo uma análise de exploratóra dos dados e preparando as bases para fazer uma base única e ainda acresentei fonte externas do IBGE tendo com chave o estado na base de clientes , a cidade que seria mais proveitoso apresentava inconsistencias e gerei base única.
+
+
+
+       
+   	
+	
+	
 	
