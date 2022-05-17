@@ -1,0 +1,29 @@
+StoryTelling (Colocar na jornada do herói)
+
+Parte 1 : Entendimento do Negócio/Dados
+Inicalmente foi estudo o contexto em que se dava o problema de negócio, e pergunta de negócio a ser respondida, após o entimento claro da situação, iniciou-se o processo de análise exploratória de dados com o objetivo de entender cada base e como as mesmas poderiam colaborar com a solução final
+
+Parte 2 : ETL
+A Parte de ETL nesse caso tem o objetivo de unir todas as bases do case juntamente com base externas de enriquecimento na granularidade de data de referencia do portfólio, portanto foram feito toda carga, limpeza de dados para tornar possível o join entre as bases, eliminando também as inconsistẽncias encontradas nos dados durante o processo.
+
+Parte 3 : Selecão do melhor período de dados e determinação das métricas de baseline
+Após a criação da base de dados única, extrai-se insights e visulizaçãoes principalmente a respeito da sazonalidade com o objetivo claro de encontra o melhor período de dados que representa o futuro mais provável juntamente com a massa que expressa-se o problema de negócio a ser resolvido, definindo os útlimos 6 meses e apartir dessa decisão foram encontradas as métricas de baseline para comparar com a solução a ser apresentada.
+
+Parte 4 : Definição de efetividade da régua de cobrança 
+Com as métricas de baseline apresentadas, definiu-se o conceito de efetividade para o problema de negócio, portanto para esse case , definição com uma ação da régua de cobrança como efetiva, aquela que após o envio, o contrato lé ou responde e efetua um pagamento nos próximos 5 dias, sendo esse período de monitoramento igual para todas as ações dentro da régua de cobrança.
+
+Parte 5 : Clusterização
+Usando o algoritmo de machine Learning  Kmeans elegi as principais features e o nº de clusters, extraindo as labels e aplicando a base de dados única a cada contrato seu respectivo cluster.
+
+Parte 6 : Análise exploratória de dados dos CLusters
+Para cada Cluster foi usada as seguintes analises; 1 - Curva da taxa de efetividade por acionamentos , 2 - Curva da taxa de efetividade por tipo de ação, 3 - Curva da taxa de efetividade por tipo de ação(filtro de desemgajamento), 4 - Curva de desengajamento por acionamentos.
+
+Parte 7 : Definição da melhor Régua de Cobrança 
+Através dos insights da análise de dados dos tudos, foi estabelecida uma régua ideal de cobrança com a missão clara de aumentara a taxa de efetifividade das ações aumentando a eficiência da recuperação de crédito e retênção dos clientes da base stone.
+
+Parte 8 : Validação da estratégia
+Com a régua de cobrança definida para cada cluster, foi feita um simulação e aferido a taxa de efetividade para cada estratégia apresentada como solução.
+
+
+Serviços para  vídeos
+https://nespol.com.br/blog/21-sites-e-programas-para-criar-videos-animados-online/
